@@ -1,0 +1,524 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body
+{
+    height: 100%;
+}
+
+a,li,button
+{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+
+
+
+
+.gen-window
+{
+    height: 100vh;
+    max-width: 100%;
+    background: url("/img/bg.png") center center no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+}
+.wrapper-window
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a
+{
+    color: #4d4959;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "about us" */
+    letter-spacing: 3px;
+    margin: 32px;
+    transition: all .3s ease;
+    border-bottom: 0px bisque;
+}
+.menu a:hover
+{
+    color:black;
+    font-size: 14px;
+}
+.logo a img
+{
+    margin: 0 30px;
+}
+
+
+
+.generation
+{
+    padding: 50px 30px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+.generation-img
+{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.generation-header
+{
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "A NEW GENE" */
+    letter-spacing: 3.6px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.generation-text
+{
+    color: #848789;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+}
+
+
+
+.vintage
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "logo logo info"
+                         "logo logo info"
+                         "logo logo bike";
+}
+.left-side
+{
+    grid-area: logo;
+    position: relative;
+}
+.logo-bike
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.left-side img, .content-right-img img
+{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.right-side
+{
+    grid-area: info;
+    padding: 50px 30px 50px 30px;
+}
+.content-right-img
+{
+    grid-area: bike;
+}
+.content-right img
+{
+    display: block;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.content-right__header
+{
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "A NEW GENE" */
+    letter-spacing: 3.6px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.content-right__text
+{
+    color: #848789;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.handcrafted
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "info2 image image"
+                         "info2 image image"
+                         "bred image image";
+}
+.handcrafted__left-side
+{
+    grid-area: info2;
+    padding: 50px 30px;
+}
+.p2-image
+{
+    grid-area: bred;
+}
+.handcrafted__right-side
+{
+    grid-area: image;
+    position: relative;
+}
+.logo-p2
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.p2-text
+{
+    color: #848789;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.99px;
+    text-align: center;
+}
+.p2-img
+{
+    display: block;
+    margin: 0 auto;
+}
+.p2-header
+{
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "La Boriosa" */
+    letter-spacing: 3.6px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.p2-image img,.handcrafted__right-side img
+{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+
+
+.retro
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "ramp info3 bike2"
+                        "ramp info3 bike2"
+                        "ramp retro bike2";
+}
+.retro-left
+{
+    grid-area: ramp;
+}
+.retro-center
+{
+    grid-area: info3;
+    padding: 80px 30px;
+}
+.retro-center-bottom
+{
+    grid-area: retro;
+}
+.retro-center-bottom img
+{
+    height: 100%;
+    width: 100%;
+}
+.retro-right
+{
+    grid-area: bike2;
+}
+
+.retro-left img, .retro-right img, .retro-center-bottom
+{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+.retro-header
+{
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "retrò Bike" */
+    letter-spacing: 3.6px;
+    text-align: center;
+    margin:20px 0;
+}
+.retro-center img
+{
+    display: block;
+    margin:0 auto;
+}
+.retro-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.99px;
+    text-align: center;
+    color: #848789;
+}
+
+
+.slide-one
+{
+    background-color: #f7f7f7;
+    padding: 100px 100px;
+}
+.slide-one img
+{
+    display: block;
+    margin:0 auto;
+    width: 50px;
+    height: 57px;
+}
+
+
+.place
+{
+    margin:30px 0 20px 0;
+    font-size: 18px;
+    text-align: center;
+    /* Text style for "AOD New Yo" */
+    font-family: "Lato - Bold",sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+.mean
+{
+    color: #848789;
+    text-align: center;
+    font-size: 22px;
+    line-height: 34px;
+}
+.slick-prev,.slick-next
+{
+    display: none;
+}
+.fab
+{
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.shop
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "brooks market bags bike4 market2 market2"
+                         "brooks2 brooks2 bags bike4 brooks3 bags2";
+}
+.item-1
+{
+    grid-area: brooks;
+}
+.item-2
+{
+    grid-area: market;
+}
+.item-3
+{
+    grid-area: bags;
+}
+.item-4
+{
+    grid-area: bike4;
+}
+.item-5
+{
+    grid-area: market2;
+}
+.item-6
+{
+    grid-area: brooks2;
+}
+.item-7
+{
+    grid-area: brooks3;
+}
+.item-8
+{
+    grid-area: bags2;
+}
+.r1
+{
+    max-height: 100%;
+}
+.out
+{
+    position: relative;
+}
+.out img
+{
+    width: 100%;
+    height: 100%;
+}
+.out:hover .front
+{
+    opacity: 1;
+}
+.front
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #11ac78c2;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+.front img
+{
+    height: 30px;
+    width: 51px;
+}
+.front p
+{
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "S, hop now" */
+    letter-spacing: 2.8px;
+    margin-top: 8px;
+}
+
+
+
+.discover
+{
+    background-color: black;
+    padding: 75px 0;
+}
+.discover a
+{
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "DISCOVER T" */
+    letter-spacing: 2.8px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px 24px 50px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.discover a:hover
+{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+}
+
+
+.follow
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 110px 0;
+}
+.logo-follow
+{
+    display: block;
+    margin: 0 auto;
+}
+.text-follow
+{
+    color: #848789;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 35px 0;
+}
+.follow-form
+{
+    display: flex;
+    justify-content: center;
+}
+.follow-form input
+{
+    width: 350px;
+    height: 69px;
+    border: 1px solid #d3d7d9;
+    background-color: #ffffff;
+    outline: none;
+    margin-right: 8px;
+    color: #92929298;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+.follow-form button
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 126px;
+    height: 69px;
+    background-color: #64c29e;
+    padding: 24px 42px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+}
+
+.footer
+{
+    padding:50px 0;
+    background-color: #f7f7f7;
+}
+.footer p
+{
+    color: black;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}

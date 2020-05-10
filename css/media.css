@@ -1,0 +1,189 @@
+@media screen and (max-width:1024px)
+{
+    .logo a img
+    {
+        margin: 0 10px
+        !important;
+    }
+    .menu a
+    {
+        margin: 0 15px 0 15px
+        !important;
+    }
+
+}
+@media screen and (max-width:800px)
+{
+    .content-right-img,.p2-image
+    {
+        display: none;
+    }
+
+    #media
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: "logo logo logo logo"
+                            "logo logo logo logo"
+                            "info info info info"
+                            ;
+    }
+    #media2
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: "image image image image"
+                             "image image image image"
+                             "info2 info2 info2 info2"
+                            ;
+    }
+    .generation
+    {
+        padding: 80px 100px 90px 80px
+        !important;
+    }
+    #media3
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: "brooks market"
+                             "brooks2 brooks2"
+                             "bags bike4"
+                             "bags bike4"
+                             "market2 market2"
+                             "brooks3 bags2";
+    
+    }
+    #media-r {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+            "ramp"
+            "info3"
+            "retro"
+            ;
+    }
+    .retro-right
+    {
+        display: none;
+    }
+    .retro-center
+    {
+        padding: 30px
+        !important;
+    }
+}
+@media screen and (max-width:568px)
+{
+    .menu
+    {
+        display: none;
+    }
+    .gen-window
+    {
+        position: relative;
+        padding-top: 10px;
+    }
+    .burger span
+    {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: cadetblue;
+        margin:6px;
+    }
+    .burger
+    {
+        position: absolute;
+        top:50px;
+        right: 15px;
+    }
+    .s1,.s2,.s3
+    {
+        transition: all .3s ease;
+    }
+    .active .s1
+    {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    .active .s2
+    {
+        position: relative;
+        transform: rotate(45deg);
+    }
+    .active .s3
+    {
+       display: none;
+    }
+    .generation
+    {
+        padding:20px 20px 30px 20px
+        !important;
+    }
+    .generation-header,.generation-img
+    {
+        margin-bottom: 15px
+        !important;
+    }
+  
+    #media
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "logo logo logo logo"
+                            "info info info info"
+                            ;
+    }
+    #text-gen
+    {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #media2
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "image image image"
+                             "info2 info2 info2"
+                             ;
+    }
+    .slide-one
+    {
+        padding: 50px 22px
+        !important;
+    }
+    .discover a
+    {
+        width: 250px;
+        padding: 15px;
+    }
+    .follow-form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #repeat input
+    {
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+        margin: 0 0 12px 0;
+    }
+    #repeat button
+    {
+        width: 120px;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
