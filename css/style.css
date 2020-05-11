@@ -28,6 +28,7 @@ a,li,button
     background: url("../img/bg.png") center center no-repeat;
     background-size: cover;
     padding-top: 35px;
+    overflow: hidden;
 }
 .wrapper-window
 {
@@ -61,13 +62,14 @@ a,li,button
     height: 100vh;
     display: block;
     width: 50%;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.342);
     padding-top: 80px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     transition: all .3s ease;
 }
 .burger-nav
