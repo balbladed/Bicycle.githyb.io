@@ -120,6 +120,11 @@
     {
        display: none;
     }
+    .go
+    {
+        transform: translateX(0%)
+        !important;
+    }
     .generation
     {
         padding:20px 20px 30px 20px

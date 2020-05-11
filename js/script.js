@@ -3,6 +3,11 @@ $(document).ready(function() {
       $(".burger").toggleClass("active");
   });
 });
+$(document).ready(function() {
+  $(".burger").click(function(event){
+      $(".burger-menu").toggleClass("go");
+  });
+});
 
 $(document).ready(function(){
   $('.slider').slick({
